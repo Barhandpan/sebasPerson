@@ -17,7 +17,7 @@ namespace sebasPerson
             string personName = Console.ReadLine();
             Console.WriteLine();
             personName = personName.ContainOnlyLetters("Name");
-            newPerson.Name = personName;
+            newPerson.Name = personName.Substring(0, 1).ToUpper() + personName.Substring(1).ToLower(); 
             Console.WriteLine("Please Write The Age of The Person You Would Like To Add");
             string input = Console.ReadLine();
             Console.WriteLine();
